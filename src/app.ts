@@ -1,8 +1,8 @@
 // const userName: string = "Max";
 
-let age: number = 25;
+// let age: number = 25;
 
-age = 29;
+// age = 29;
 // var result;
 
 // const add = (a: number, b: number) => {
@@ -22,7 +22,7 @@ button?.addEventListener("click", (e) => {
 
 // printOutput(add(2, 4));
 
-const hobbies = ["Sport", "Cooking"];
+const hobbies = ["Sport", "Cooking", "Gaming"];
 
 const activeHobbies = ["Hiking", ...hobbies];
 
@@ -31,7 +31,7 @@ const activeHobbies = ["Hiking", ...hobbies];
 // console.log(activeHobbies);
 
 const person = {
-  name: "Max",
+  firstName: "Max",
   age: 30,
 };
 
@@ -48,4 +48,14 @@ const add = (...numbers: number[]) => {
 
 const addedNumber = add(5, 10, 2, 3.7);
 
-console.log(addedNumber);
+// console.log(addedNumber);
+
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+
+// console.log(hobby1, hobby2, remainingHobbies);
+// Sport Cooking ["Gaming"]
+
+const { firstName: userName, age } = person;
+
+console.log(userName, age, person);
+// Max 30 {firstName: 'Max', age: 30}
