@@ -15,3 +15,13 @@ button === null || button === void 0 ? void 0 : button.addEventListener("click",
     console.log(e);
 });
 printOutput(add(2, 4));
+const hobbies = ["Sport", "Cooking"];
+const activeHobbies = ["Hiking", ...hobbies];
+// activeHobbies.push(...hobbies);
+// console.log(activeHobbies);
+const person = {
+    name: "Max",
+    age: 30,
+};
+const copiedPerson = Object.assign({}, person);
+console.log(copiedPerson);
